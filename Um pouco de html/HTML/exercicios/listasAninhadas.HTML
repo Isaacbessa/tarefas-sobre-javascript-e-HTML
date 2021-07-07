@@ -1,0 +1,55 @@
+<h1>Projeto</h1>
+<ul class="tree">
+    <li>
+       <button type="button" onclick="fechou('esconde')">Backend</button>
+        <ul id="esconde">
+                     
+            <li>
+                <button type="button" onclick="fechou('escondeApp')">app</button>
+                <ul id="escondeApp">
+                    <li>produto.js</li>
+                    <li>usuario.js</li>
+                    <li>venda.js</li>
+                </ul>
+            </li>
+            <li>
+                <button type="button" onclick="fechou('escondeConfig')">config</button>  
+                <ul id="escondeConfig">
+                    <li>banco.js</li>
+                    <li>rotas.js</li>
+                    <li>servidores.js</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <button type="button" onclick="fechou('escondeFront')">frontend</button> 
+        <ul id="escondeFront">
+            <li>
+                public <br>
+                <ul> 
+                    <li>app.css</li>
+                    <li>app.js</li>
+                    <li>index.html</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+<style>
+    .display {
+        display: none;
+    }
+</style>
+ 
+<script>
+    function fechou(recebeId){
+        let display = document.getElementById(recebeId).style.display;
+        if(display == 'none'){
+            document.getElementById(recebeId).style.display = 'block'
+        }else {
+            document.getElementById(recebeId).style.display = 'none'            
+        }
+    }
+</script>
