@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tela</title>
+</head>
+<body>
+    <button onclick="openFullscreen();">Tela cheia</button>
+    <button onclick="closeFullscreen();">Fechar tela</button>
+    
+    <script>
+        var tela = document.documentElement;
+        function openFullscreen() {  
+          if(tela.requestFullscreen){ 
+              tela.requestFullscreen() 
+          }  
+        }
+
+        function closeFullscreen() { 
+            if(document.exitFullscreen){
+                document.exitFullscreen()
+            }
+        }
+        
+    </script>
+
+</body>
+</html>
