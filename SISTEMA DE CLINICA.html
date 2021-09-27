@@ -1,0 +1,55 @@
+<meta charset="UTF-8">
+<script src="https://unpkg.com/vue"></script>
+<style>
+   #app{
+       color:indigo;
+       font-family: 'Courier New', Courier, monospace;
+   }
+   button{
+       font-family: 'Courier New', Courier, monospace;
+   }
+   .p{
+       font-family: 'Courier New', Courier, monospace;
+       align-items: center;
+   }
+  
+</style>
+<div id="app">
+    <template v-if="logado">
+        <p>Paciente: {{ nome }}</p>
+        <p>Responsável: {{nomeDoResponsavel}}</p>
+        <p>Senha: {{senha}}</p>
+        <p>Tipo de exame: {{tipoDeExame}}</p>
+    </template>
+    <p v-else>Usuario já atualizado</p>
+    <button @click="logado = !logado">
+        {{ logado ? 'Sair' : 'Entrar' }}</button>
+        <button onclick="openFullscreen();">Tela cheia</button>
+    <button onclick="closeFullscreen();">Fechar tela</button>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            nome: 'Nicolas Cassunde',
+            nomeDoResponsavel: "Doutor Ricardo",
+            senha: 178,
+            tipoDeExame: "Nutricionista",
+            obeservacao: "",
+            logado: false,
+        }
+    })
+    var tela = document.documentElement;
+        function openFullscreen() {  // Quando a função openFullscreen () é executada abre a tela cheia, disparando a função
+          if(tela.requestFullscreen){ // se tela.requestFullscreen for true, executar
+              tela.requestFullscreen() 
+          }  
+        }
+
+        function closeFullscreen() { // Quando a função closeFullscreen () é executada fecha a tela cheia, disparando a função
+            if(document.exitFullscreen){
+                document.exitFullscreen()
+            }
+        }
+</script>
