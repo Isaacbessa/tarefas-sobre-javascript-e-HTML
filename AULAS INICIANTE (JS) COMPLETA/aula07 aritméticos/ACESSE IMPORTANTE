@@ -1,0 +1,7 @@
+const nome = "Isaac";//string = texto
+const nome = "Maciel";//string = texto
+const num1 = 10;// number
+const num2 = 20;//number
+let nomeAluno;// undefined => não aponta pra local nenhum na memória
+const sobrenomeAluno = null;// numlo=> não aponta pra local nenhum na memória
+const aprovado = false;// boolean = true (verdadeiro), false (lógico)

@@ -1,0 +1,8 @@
+//não podemos criar constantes com plavras reservadas
+//constantes precisam ter nomes significativos
+// não podemos começar o nome de uma constante com um numero
+// não podem conter espaços ou traços
+// utilizamos camelcase
+// case-sensitive
+// não pode modificar o valor de uma constante
+// não ultilize var, utilize const.

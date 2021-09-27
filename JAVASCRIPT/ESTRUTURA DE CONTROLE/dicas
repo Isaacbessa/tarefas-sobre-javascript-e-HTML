@@ -1,0 +1,5 @@
+//for - percorre um bloco de código várias vezes
+for / in - percorre as propriedades de um objeto
+for / of - percorre os valores de um objeto iterável
+while - percorre um bloco de código enquanto uma condição especificada é verdadeira
+do / while - percorre um bloco de código uma vez e, em seguida, repete o loop enquanto uma condição especificada for verdadeira

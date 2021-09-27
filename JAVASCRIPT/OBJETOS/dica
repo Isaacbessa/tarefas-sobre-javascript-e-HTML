@@ -1,0 +1,7 @@
+a herança é baseada em prototype
+prototype é  um objeto que está associado a todas as funções e 
+objetos por padrão em JavaScript,  
+onde a propriedade prototype da função é acessível e modificável e a propriedade prototype do objeto 
+(também conhecida como atributo) não é visível.
+
+Cada função inclui objeto de protótipo por padrão.
